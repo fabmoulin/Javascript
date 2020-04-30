@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Javascript</title>
+        <meta name="description" content="Exemples Javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p>Exercice 4</p>
+        <form method="post" action="">
+            <div>
+           <label for="firstName">Votre nom : </label>
+           <input type="text" name="firstName" id="firstName" placeholder="Votre nom">
+           </div>
+    
+            <div>
+           <label for="lastName">Votre prénom : </label>
+           <input type="text" name="lastName" id="lastName" placeholder="Votre prénom">
+            </div>
+    
+            <div>
+           <label for="city">Votre ville : </label>
+           <input type="text" name="city" id="city" placeholder="Votre ville">
+            </div>
+    
+            <div>
+            <input type="button" value="envoyer" id="bouton_envoi" onclick="controle()">
+            </div>
+        </form>
+    
+        <script>
+            function controle() {
+    
+        var contenufirstName = document.getElementById("firstName").value; //value=récupérer la valeur de l'id
+        var contenulastName = document.getElementById("lastName").value;
+        var contenucity = document.getElementById("city").value;
+     
+        alert('nom : ' + contenufirstName + '\n' + 'prénom : ' + contenulastName + '\n' + 'ville : ' + contenucity);
+            }
+        </script>  
+
+
+    <script>
+        /*correction exercices
+        //balise script pour Javascript à mettre à chaque fois qu'on veut écrire le script
+    //=pour commenter 1 seule ligne
+    /*=pour commenter plusieurs lignes */
+// Exercice 1
+    /*
+    var myVar; //je crée une variable
+
+    myVar = 'il fait beau aujourd\'hui'; //je donne un nom à ma variable / une valeur - \=ne prends pas en compte l'apostrophe derrière \
+
+    alert(myVar); //indiquer la variable par son nom pour avoir la valeur - affiche le message */
+
+//Exercice 2
+    //Version 1
+    /*
+    var lastName = 'Doe';//je déclare ma variable et je la nomme
+    var firstName = 'John';//je déclare ma variable et je la nomme
+    var city = 'New York';//je déclare ma variable et je la nomme
+    alert('Nom : ' + lastName + '\n' + 'Prénom : ' + firstName + '\n' + 'Ville : ' + city); // je créée l'alerte en aditionnant les 3 variables*/
+
+    //Version 2
+    /*
+    var myString = 'Nom : ' + lastName + '\n' + 'Prénom : ' + firstName + '\n' + 'Ville : ' + city;
+    alert(myString);*/
+
+//Exercice 3
+    /*
+    var userName = prompt('Quel est votre prénom ?'); //ouvre une boite de dialogue pour avoir un champ 
+    alert('Bonjour ' + userName); // Affiche Bonjour + le prénom entré par l'utilisateur*/
+    </script> 
+    </body>
+</html>
+
